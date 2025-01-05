@@ -1,0 +1,83 @@
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  color: rgb(210, 0, 0);
+  text-decoration: none;
+} */
+
+/* General navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #e82962, #1fc6c6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo styling */
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for individual navigation links */
+.nav-links a {
+  margin: 0 1rem;
+  color: rgb(210, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effects for navigation links */
+.nav-links a:hover {
+  color: #fff;
+  transform: scale(1.1);
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+}
+
+/* Add a smooth scroll effect */
+html {
+  scroll-behavior: smooth;
+}

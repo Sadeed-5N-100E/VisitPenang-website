@@ -1,0 +1,24 @@
+.cards-slider {
+  display: flex;
+  overflow-x: scroll;
+  padding: 1rem;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 1rem;
+  background: linear-gradient(to right, #c8d53b85, #f3f5f5f1);;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card p {
+  padding: 1rem;
+}
