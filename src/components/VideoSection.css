@@ -11,9 +11,59 @@
   object-fit: cover;
 }
 
-.video-text {
+/* .video-text {
   position: absolute;
   top: 20%;
   left: 10%;
   color: white;
+} */
+.video-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  z-index: 1; /* Ensure text is above the video */
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 2s ease-out forwards, slideIn 4s ease-out forwards;
+}
+
+/* Title (Penang) */
+.video-text h1 {
+  font-size: 3rem; /* Large font size for the title */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Shadow to make text stand out */
+  margin: 0;
+}
+
+/* Subtitle (Doors open) */
+.video-text p {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Slight shadow */
+}
+
+/* Animation for fading in and sliding */
+@keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate(-70%, -20%); /* Start below and left of the center */
+  }
+  100% {
+    transform: translate(-50%, -50%); /* End at the center */
+  }
 }

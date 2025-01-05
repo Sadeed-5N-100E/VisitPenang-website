@@ -29,9 +29,8 @@
   z-index: 1000;
 }
 
-/* Logo styling */
 .logo {
-  height: 50px;
+  height: 60px;
   object-fit: contain;
 }
 
@@ -81,3 +80,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+ul{padding-left: 0;}
+ul li{list-style: none; display: inline-block;}

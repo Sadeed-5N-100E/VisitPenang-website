@@ -15,43 +15,30 @@ function App() {
     <Router>
       <div>
         <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
+         
         </nav>
         <Navbar/>
         <VideoSection/>
+        <div style={{ width: "100%",  height: "3px",  margin: "1rem 0",  background: "linear-gradient(to right, #e82962, #1fc6c6)"}}> </div>
+        <h2 style={{marginTop: "2rem", textAlign: "center",fontSize: "2rem",fontWeight: "bold"}}>Nature</h2>
+        <div style={{ width: "100%",  height: "3px",  margin: "1rem 0",  background: "linear-gradient(to right, #e82962, #1fc6c6)"}}> </div>
+        <h2 style={{marginTop: "2rem", textAlign: "center",fontSize: "2rem",fontWeight: "bold"}}>Heritage</h2>
+        <div style={{ width: "100%",  height: "3px",  margin: "1rem 0",  background: "linear-gradient(to right, #e82962, #1fc6c6)"}}> </div>
+        <h2 style={{marginTop: "2rem", textAlign: "center",fontSize: "2rem",fontWeight: "bold"}}>Penang's Food and beverages</h2>
+        <h3 style={{marginTop: "2rem", textAlign: "center",fontSize: "1rem",fontWeight: "bold"}}>A melting pot of three cuisines </h3>
         <CardsSlider/>
+        <div style={{ width: "100%",  height: "3px",  margin: "1rem 0",  background: "linear-gradient(to right, #e82962, #1fc6c6)"}}> </div>
         <SkylineImage/>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
        <Routes>
-       <Route path="/">
+        <Route path="/">
           </Route>
-          </Routes>
+       </Routes>
       </div>
     </Router>
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
-
 export default App;
+

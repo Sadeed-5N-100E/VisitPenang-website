@@ -2,4 +2,38 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  height: 350px;
+}
+/* Ensures the footer is positioned at the bottom */
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #f2f2f2; /* Optional: Gives a light gray background to the footer */
+}
+/* Footer text container */
+.footer-text {
+  position: absolute;
+  top: 50%; /* Center the text vertically */
+  left: 5%;  /* Left-align the text */
+  transform: translateY(-50%); /* Vertically center the text */
+  color: #f6f3f3; /* Set text color */
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-links p {
+  margin: 5px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-links p:hover {
+  color: #ff7e5f; /* Change text color on hover */
 }
