@@ -8,7 +8,7 @@ const VideoSection = () => {
         <source src={MainVideo} type="video/mp4" />
       </video>
       <div className="video-text">
-        <h1>Penang</h1>
+        <h1 >Penang</h1>
         <p>Doors open</p>
       </div>
     </div>
